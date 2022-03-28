@@ -6,8 +6,21 @@ Web stranica koja sadržava informacije o hrvatskoj kulturi piva. Bit će prikaz
 <ul>
   <li>Izlistanje pivovara </li>
   <li>Pretraživanje piva, pivovara i gradova u kojima se nalaze pivovare i piva </li>
-  <li>Prijava i dodavanje recenzija </li>
+  <li>Prijava i dodavanje recenzija na pivo</li>
   <li>Posebni odjeljak za pivo i svim informacijama o njemu </li>
   <li>Stranica sa zanimljivostima </li>
   <li>TODO </li>
 </ul>
+
+## Korištene tehnologije
+<ul>
+  <li>HTML </li>
+  <li>JavaScript (React) </li>
+  <li>Baza podataka (Firebase?) </li>
+  <li>CSS (Bootstrap)</li>
+  
+  <li>TODO </li>
+  
+  
+</ul>
+  
