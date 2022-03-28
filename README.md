@@ -1,5 +1,6 @@
 # WP-projekt
 
+
 Web stranica koja sadržava informacije o hrvatskoj kulturi piva. Bit će prikazana piva karakteristična za hrvatske gradove, craft piva kao i najnovija hrvatska piva na tržištu. Bit će prikazani detalji o pivu te o pivovari koja ga je proizvela.
 
 ## Funkcionalnosti
