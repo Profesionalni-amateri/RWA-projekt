@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../slike/pocetna.jpg");
+}
+
+    
+.navigationWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+  
+.logoWrapper {
+      display: flex;
+  
+    }
+.stylish {
+        font-weight: bold;
+      }
+  
+.logo {
+        padding-left: 4px;
+        color: #FFDC00;
+    }
+    
+ 
+.navigation {
+      display: flex;
+      list-style-type: none;
+}
+  
+.navigation li {
+        opacity: 1;
+        list-style-type: none;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+}
+ 
+.navigation .parent {
+        padding: 0 10px;
+        cursor: pointer;
+ }
+  
+ .navigation .parent .link {
+          position: relative;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+          color: white;
+}
+  
+ .navigation .parent .link:hover {
+            color: #FFDC00;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  text-align:left;
+  font-size: 20px;
+  color: #fff;
+}
+        
+    
+
+
