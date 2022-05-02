@@ -5,85 +5,105 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../slike/pocetna.jpg");
+    box-sizing: border-box;
 }
 
-    
-.navigationWrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #222;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
-    color: white;
-    text-transform: uppercase;
-    overflow: hidden;
+img{
+  width: 100%;
+  height: auto;
 }
-  
-.logoWrapper {
-      display: flex;
-  
-    }
+
+.mb-2{
+  margin-bottom: 0rem !important;
+}
+
+nav{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #222;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+
 .stylish {
-        font-weight: bold;
-      }
-  
+  font-weight: bold;
+  align-items: flex-start;
+}
+
 .logo {
-        padding-left: 4px;
-        color: #FFDC00;
-    }
-    
- 
-.navigation {
-      display: flex;
-      list-style-type: none;
+  padding-right: 430px;
+  padding-left: 6px;
+  align-items: flex-start;
+  color: #FFDC00;
 }
-  
-.navigation li {
-        opacity: 1;
-        list-style-type: none;
-        color: white;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
+
+.nav-link{
+  display: block;
+  color: #fff;
 }
- 
-.navigation .parent {
-        padding: 0 10px;
-        cursor: pointer;
- }
-  
- .navigation .parent .link {
-          position: relative;
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-          transition: all 0.3s ease-in-out;
-          color: white;
+
+.navbar-expand-lg .navbar-nav .active{
+  color: #FFDC00;
 }
-  
- .navigation .parent .link:hover {
-            color: #FFDC00;
+
+.nav-link .dropdown-toggle{
+  padding: auto;
+  color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+  color: #FFDC00;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+  color: #FFDC00;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
+.dropdown-item{
+  text-transform: none;
+}
+
+.dropdown-item:hover{
+  color:#FFDC00;
+}
+
+#aboutUs{
+  margin-right: 20px;
+}
+
+#registerBtn{
+  color: #FFDC00;
+  border-color: #FFDC00;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+p{
+  margin-bottom: 0rem;
 }
 
 footer{
-  position: absolute;
-  bottom: 0;
+  line-height: 5;
   left: 0;
-  right: 0;
-  height: auto;
-  width: 100vw;
-  padding-top: 40px;
-  text-align:left;
-  font-size: 20px;
-  color: #fff;
+  bottom: 0;
+  width: 100%;
+  background-color:#222;
+  color: white;
+  text-align: center;
 }
         
     
