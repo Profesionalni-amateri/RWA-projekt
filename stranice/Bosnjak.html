@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/Pivovare.css">
     <script src="js/script.js"></script>
 
     <title>Hrvatska kultura piva</title>
@@ -16,6 +16,8 @@
     <nav class="navbar navbar-expand-lg navbar-light p-3 mb-2 bg-dark text-white">
         <span class="stylish">Hrvatska</span>
         <span class="logo">Piva</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -24,13 +26,12 @@
             <li class="nav-item">
               <a class="nav-link" href="../stranice/Piva.html">Piva</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown active">
               <a class="nav-link dropdown-toggle" href="../stranice/Pivovare.html" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
                 Pivovare
               </a>
-            
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="../stranice/Bosnjak.html">Bošnjak</a>
+                <a class="dropdown-item" href="Bosnjak.html">Bošnjak</a>
                 <a class="dropdown-item" href="#">Carlsberg</a>
                 <a class="dropdown-item" href="#">Medvedgrad</a>
                 <a class="dropdown-item" href="../stranice/Pulfer.html">Pulfer</a>
@@ -45,15 +46,26 @@
             <li class="nav-item">
               <a class="nav-link" href="../stranice/Recenzije.html">Recenzije</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" id="aboutUs" href="O_nama.html">O nama</a>
+            <li class="nav-item">
+              <a class="nav-link" id="aboutUs" href="../stranice/O_nama.html">O nama</a>
             </li>
             <button type="button" id="singInBtn" class="btn btn-outline-light">Prijavi se</button>
             <button type="button" id="registerBtn" class="btn btn-secondary">Registriraj se</button>
           </ul>
         </div>
       </nav>
-      <img src="../slike/pocetna.jpg" alt="pocetna">
+      <img src="../slike/bosnjak.jpeg" alt="pocetna"> </img>
+      <div class="container">
+        <div class="content"  id="transparentText">
+            <h1 id="title">Bošnjak Beer&Gin</h1>
+            <p>
+                Obitelj Bošnjak otvorila je prvu Kušaonicu domaćeg piva koja je nastala iz ljubavi prema hobiju – kuhanju domaćeg piva. 
+                U davna vremena prije stotinjak godina u dvorištu obitelji Bošnjak iskopan je duboki bunar za potrebe mlinova i tadašnjeg 
+                obiteljskog „biznisa“. Bunar nije presušivao ni u vrijeme najvećih suša. Danas ga gospodarstvo koristi po potrebi, premda 
+                ima priključak na regionalni vodovod. U ista ta davna vremena, jedan od kućara u dvorištu nazvan je - pivnica.
+            </p>
+        </div>
+      </div>
 
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
