@@ -1,0 +1,87 @@
+.itemsContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    margin-bottom: 0rem;
+}
+
+
+.mainDiv{
+    margin-top: 1rem;
+}
+
+h2{
+    font-weight: bold;
+    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 25px;
+}
+
+.items{
+    display: grid;
+    color: #fff;
+    margin: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.container{
+    margin-top: 0.5rem;
+}
+
+.item{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 5%;
+    margin-top: 0;
+}
+
+.itemLink{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: 0.5rem;
+    width: fit-content;
+    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+    text-decoration: none;
+}
+
+.item a:hover{
+    color: black;
+    background-color: #FFD700;
+    border-radius: 5%;
+}
+
+.hasPic{
+    width: 100%;
+}
+
+.pic{
+    width: 70%;
+    width: fit-content;
+    text-align: end;
+}
+
+.firstRow{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.name{
+    width: fit-content;
+    text-align: center;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hasPic h6{
+    font-size: 15px;
+    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+}

@@ -1,9 +1,17 @@
 import React from 'react';
 import './Footer.css';
+import ItemsContainer from './ItemsContainer';
 
 const Footer = () => {
   return (
-    <p>Copyright &copy; Profesionalni amateri</p>
+    <footer className='footer'>
+      <div className='footerSize'>
+        <ItemsContainer/>
+      </div>
+      <p>Copyright &copy; Profesionalni amateri</p>
+
+    </footer>
+    
   )
 }
 
