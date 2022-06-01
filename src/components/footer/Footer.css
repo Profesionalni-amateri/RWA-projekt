@@ -1,0 +1,18 @@
+p{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0rem;
+  font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+}
+
+  .footer{
+    background-color:#222;
+    color: white;
+  }
+
+  .footerSize{
+    display: flex;
+    align-items: center;
+  }
