@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '../button/Button';
 import { Link, NavLink } from 'react-router-dom';
+import { AuthContextProvider } from '../../components/context/AuthContext';
 import './Navbar.css';
 import Dropdown from './Dropdown';
 
@@ -125,8 +126,10 @@ const Navbar = () =>  {
               Prijavi se
             </Link>
           </li>  
-        </ul>  
+        </ul> 
+        <AuthContextProvider>
         <Button/>
+        </AuthContextProvider> 
       </nav>
     </>
   );
