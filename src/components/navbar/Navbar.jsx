@@ -94,6 +94,20 @@ const Navbar = () =>  {
             </NavLink>
           </li>
           <li className='nav-item'>
+            <NavLink
+              to='/recenzija'
+              style={({ isActive }) => ({
+                backgroundColor: isActive? 'gold':'',
+                borderRadius: '2px' ,
+                color: isActive? 'black':'white'
+            })}
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Recenzija
+            </NavLink>
+          </li>
+          <li className='nav-item'>
             <NavLink to='/Onama' style={({ isActive }) => ({
                     backgroundColor: isActive? 'gold':'',
                     borderRadius: '2px' ,
@@ -104,7 +118,7 @@ const Navbar = () =>  {
           </li>
           <li>
             <Link
-              to='/sign-up'
+              to='/sign_in'
               className='nav-links-mobile'
               onClick={closeMobileMenu}
             >

@@ -5,27 +5,27 @@ const Item = ({Links, title}) => {
   return (
     <div className='mainDiv'>
       <h2>{title}</h2>
-      <ul className='items'>
+      <div className='items'>
        <div className='container'>
        {Links.map((link) => 
-        <li className='item' key={link.name}>
+        <div className='item' key={link.name}>
           {link.pic ? 
           <div className='hasPic'>
-            <li className='firstRow'>
+            <div className='firstRow'>
               <p className='pic'>{link.pic}</p>
               <p className='name'>{link.name}</p>
-            </li>
+            </div>
             
-            <li>
+            <div>
               <h6>{link.info}</h6>
-            </li>
+            </div>
           </div>
           :<a className="itemLink" href={link.link}>{link.name}</a>
         }
-        </li>
+        </div>
        )}
        </div>
-      </ul>
+      </div>
     </div>
       
   )

@@ -7,7 +7,7 @@ const ItemsContainer = () => {
   return (
       <div className='itemsContainer'>
         <Item Links={ LINKOVI } title="LINKOVI"/>
-        <Item Links={ KONTAKT } title="KONTAKT"/>
+        { <Item Links={ KONTAKT } title="KONTAKT"/> }
       </div>
       
     
