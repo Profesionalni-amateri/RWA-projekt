@@ -451,7 +451,7 @@ const SearchBar = ({placeholder ,data}) => {
                                       marginLeft:'10px',
                                     marginTop:'10px',
                                     fontSize:'32px'
-                                    }}onClick={likeing}/>
+                                    }} onClick={likeing}/>
             <span style={{marginLeft:'5px',
                         fontSize:'20px'
                         }}>{likes}</span>
