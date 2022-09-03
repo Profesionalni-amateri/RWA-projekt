@@ -1,6 +1,10 @@
 import React from 'react';
 import '../../App.css';
+import Cards from '../cards/Cards';
 
 export default function Pivovare() {
-  return <h1 className='pivovare'>Pivovare</h1>;
+  return <div className='pivovare'>
+
+           <Cards/>
+  </div>;
 }

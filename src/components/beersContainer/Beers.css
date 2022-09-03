@@ -1,0 +1,60 @@
+.items-beers{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-beer{
+    margin-left: 10px;
+    display: flex;
+    border-radius: 5%;
+    width: 285px;
+    height: 205px;
+    font-size: medium;
+    background-color: rgba(157, 158, 153, 0.599);
+}
+
+.item-beer2{
+    margin-left: 10px;
+    margin-right: 8px;
+    display: flex;
+    border-radius: 5%;
+    width: 285px;
+    height: 205px;
+    font-size: medium;
+    background-color: rgba(157, 158, 153, 0.599);
+}
+.item-beer2:hover{
+    scale: 1.1;
+    }
+img{
+    padding: 10px;
+    border-radius: 15%;
+    width: 20vh;
+    height: 25vh;
+}
+.beers-text{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.beers-name{
+    font-weight: bold;
+    color: gold;
+}
+.beers-pivovara{
+    margin-top: 20px;
+}
+.beers-price{
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
