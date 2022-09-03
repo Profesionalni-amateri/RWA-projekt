@@ -12,10 +12,9 @@ export default function Home() {
     <>
       <section className='home'>
         <div className='beers-div'>
-          <div className='nameAndButton'>
-            <h2 >Piva</h2>
-            
-          </div>
+          <div className='label'>
+          <h2>Piva</h2>
+        </div>
           <div className='beers-slider'>
             <Beers
               data={beers}

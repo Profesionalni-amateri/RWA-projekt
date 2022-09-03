@@ -5,7 +5,6 @@
     font-family: 'PT Sans', sans-serif;
 }
 
-.home,
 .zanimljivosti {
     display: flex;
     height: 120vh;
@@ -104,13 +103,17 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    height: 120vh;
     color: #fff;
     font-size: 100px;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .home .beers-div {
-    margin-top: 200px;
+    margin-top: 400px;
     margin-left: 10px;
     margin-right: 10px;
     width: 100%;
@@ -128,11 +131,13 @@ html {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-
-.home .nameAndButton {
-    display: flex;
-    overflow: hidden;
-    flex-wrap: nowrap;
+.home .label{
+    margin-bottom: 80px;
+}
+.home h2 {
+    font-size: xx-large;
+    margin-left: 10px;
+    position: absolute;
     margin-bottom: 10px;
 }
 

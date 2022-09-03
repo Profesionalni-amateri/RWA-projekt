@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import SearchIcon from "@material-ui/icons/Search";
 import CloseIcon from "@material-ui/icons/Close";
 import { motion } from "framer-motion";
@@ -32,9 +32,7 @@ const SearchBar = ({placeholder ,data}) => {
       
 
   }
-  const dislike = ()=>{
 
-  }
   const clearInput = () => {
     setFilteredData([]);
     setWordEntered("");
@@ -144,7 +142,7 @@ const SearchBar = ({placeholder ,data}) => {
                                       marginLeft:'10px',
                                     marginTop:'10px',
                                     fontSize:'32px'
-                                    }}onClick={item?.dislike + 1}/>
+                                    }} onClick={item?.dislike + 1}/>
             <span style={{marginLeft:'5px',
                         fontSize:'20px'
                         }}>{item?.dislikes}</span>

@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {Home, Pivovare, Piva, Zanimljivosti, Bosnjak, Varionica,Zmajska, Onama, Review} from './components';
 import { AuthContextProvider } from './components/context/AuthContext';
 import ProtectedRoute from './components/authentication/ProtectedRoute';
-import { getAllFoodItems } from "./utils/firebaseFunctions";
+import { getAllItems } from "./utils/firebaseFunctions";
 import { useStateValue } from "./components/context/StateProvider";
 import { actionType } from "./components/context/reducer";
 
@@ -13,9 +13,8 @@ import { actionType } from "./components/context/reducer";
 const App = () =>  {
 
   const [, dispatch] = useStateValue();
-
   const fetchData = async () => {
-    await getAllFoodItems().then((data) => {
+    await getAllItems().then((data) => {
       dispatch({
       type: actionType.SET_BEERS,
       beers: data,
@@ -48,7 +47,7 @@ const App = () =>  {
         <Route path='/sign_in' element={<SignIn/>} />
         <Route path='/bosnjak' element={<Bosnjak/>} />
         <Route path='/varionica' element={<Varionica/>} />
-        <Route path='/zmajska' element={<Zmajska/>} />
+        <Route path='/zmajska' element={<Zmajska />} />
         <Route path='/onama' element={<Onama/>} />
       </Routes>
       </AuthContextProvider>
