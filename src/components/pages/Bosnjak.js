@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "../../App.css";
 import { motion } from "framer-motion";
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import {useStateValue} from "../context/StateProvider";
 
 export default function Bosnjak() {
@@ -97,7 +96,6 @@ export default function Bosnjak() {
                           </p>
                         </div>
                       </div>
-                      <ThumbUpIcon style={{color: 'blue'}}/>
                     </div>
 
                 );
@@ -132,9 +130,6 @@ export default function Bosnjak() {
                           <div className="flex items-center gap-8">
                             <p className="beers-price">
                               {'2'} <span className="text-sm text-red-500">Kn</span>
-                              <ThumbUpIcon style={{
-                                color: 'blue', marginTop: '20px'
-                              }}/>
                             </p>
                           </div>
                         </div>
@@ -167,9 +162,6 @@ export default function Bosnjak() {
                           <div className="flex items-center gap-8">
                             <p className="beers-price">
                               {'2'} <span className="text-sm text-red-500">Kn</span>
-                              <ThumbUpIcon style={{
-                                color: 'blue', marginTop: '20px'
-                              }}/>
                             </p>
                           </div>
                         </div>
@@ -203,9 +195,6 @@ export default function Bosnjak() {
                           <div className="flex items-center gap-8">
                             <p className="beers-price">
                               {'2'} <span className="text-sm text-red-500">Kn</span>
-                              <ThumbUpIcon style={{
-                                color: 'blue', marginTop: '20px'
-                              }}/>
                             </p>
                           </div>
                         </div>

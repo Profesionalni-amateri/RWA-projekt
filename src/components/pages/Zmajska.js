@@ -1,14 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {motion} from "framer-motion";
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import {useStateValue} from "../context/StateProvider";
-import ThumbDownIcon from "@mui/icons-material/ThumbDown";
+
 
 export default function Zmajska() {
 
     const [{beers},] = useStateValue();
     const [filteredData, setFilteredData] = useState([]);
-    var [likes, setLikes] = useState(0)
 
     useEffect(() => {
         const searchWord = "zmajska"
@@ -22,11 +20,7 @@ export default function Zmajska() {
             setFilteredData([])
         }
     }, [beers])
-    const likeing = () => {
-        setLikes(likes + 1)
 
-
-    }
     return (<>
         <div className='zmajska'>
             <h1 className='nameOfBrewery'>Zmajska pivovara</h1>
@@ -101,7 +95,6 @@ export default function Zmajska() {
                                             </p>
                                         </div>
                                     </div>
-                                    <ThumbUpIcon style={{color: 'blue'}}/>
                                 </div>
 
                             );
@@ -137,22 +130,6 @@ export default function Zmajska() {
                                     <div className="flex items-center gap-8">
                                         <p className="beers-price">
                                             {item?.cijena} <span className="text-sm text-red-500">Kn</span>
-                                            <span style={{
-                                                marginRight: '5px', fontSize: '20px'
-                                            }}>{item?.likes}</span>
-                                            <ThumbUpIcon style={{
-                                                color: 'blue', marginTop: '10px', fontSize: '32px'
-                                            }} onClick={likeing}/>
-
-                                            <ThumbDownIcon style={{
-                                                color: 'red',
-                                                marginLeft: '10px',
-                                                marginTop: '10px',
-                                                fontSize: '32px'
-                                            }} onClick={item?.dislike + 1}/>
-                                            <span style={{
-                                                marginLeft: '5px', fontSize: '20px'
-                                            }}>{item?.dislikes}</span>
                                         </p>
                                     </div>
                                 </div>
@@ -185,9 +162,6 @@ export default function Zmajska() {
                                     <div className="flex items-center gap-8">
                                         <p className="beers-price">
                                             {'2'} <span className="text-sm text-red-500">Kn</span>
-                                            <ThumbUpIcon style={{
-                                                color: 'blue', marginTop: '20px'
-                                            }}/>
                                         </p>
                                     </div>
                                 </div>
@@ -220,9 +194,6 @@ export default function Zmajska() {
                                     <div className="flex items-center gap-8">
                                         <p className="beers-price">
                                             {'2'} <span className="text-sm text-red-500">Kn</span>
-                                            <ThumbUpIcon style={{
-                                                color: 'blue', marginTop: '20px'
-                                            }}/>
                                         </p>
                                     </div>
                                 </div>
@@ -256,9 +227,6 @@ export default function Zmajska() {
                                     <div className="flex items-center gap-8">
                                         <p className="beers-price">
                                             {'2'} <span className="text-sm text-red-500">Kn</span>
-                                            <ThumbUpIcon style={{
-                                                color: 'blue', marginTop: '20px'
-                                            }}/>
                                         </p>
                                     </div>
                                 </div>
@@ -291,9 +259,6 @@ export default function Zmajska() {
                                     <div className="flex items-center gap-8">
                                         <p className="beers-price">
                                             {'2'} <span className="text-sm text-red-500">Kn</span>
-                                            <ThumbUpIcon style={{
-                                                color: 'blue', marginTop: '20px'
-                                            }}/>
                                         </p>
                                     </div>
                                 </div>

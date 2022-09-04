@@ -2,8 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import './Beers.css';
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
-
 
 const Beers = ({data}) => {
 
@@ -80,9 +78,6 @@ const Beers = ({data}) => {
                 <div className="flex items-center gap-8">
                   <p className="beers-price">
                     {'2'} <span className="text-sm text-red-500">Kn</span>
-                    <ThumbUpIcon style={{
-                      color: 'blue', marginTop: '20px'
-                    }}/>
                   </p>
                 </div>
               </div>
@@ -115,9 +110,6 @@ const Beers = ({data}) => {
                 <div className="flex items-center gap-8">
                   <p className="beers-price">
                     {'2'} <span className="text-sm text-red-500">Kn</span>
-                    <ThumbUpIcon style={{
-                      color: 'blue', marginTop: '20px'
-                    }}/>
                   </p>
                 </div>
               </div>
@@ -151,9 +143,6 @@ const Beers = ({data}) => {
                 <div className="flex items-center gap-8">
                   <p className="beers-price">
                     {'2'} <span className="text-sm text-red-500">Kn</span>
-                    <ThumbUpIcon style={{
-                      color: 'blue', marginTop: '20px'
-                    }}/>
                   </p>
                 </div>
               </div>
@@ -218,9 +207,6 @@ const Beers = ({data}) => {
                 <div className="flex items-center gap-8">
                   <p className="beers-price">
                     {'2'} <span className="text-sm text-red-500">Kn</span>
-                    <ThumbUpIcon style={{
-                      color: 'blue', marginTop: '20px'
-                    }}/>
                   </p>
                 </div>
               </div>
@@ -253,9 +239,6 @@ const Beers = ({data}) => {
                 <div className="flex items-center gap-8">
                   <p className="beers-price">
                     {'2'} <span className="text-sm text-red-500">Kn</span>
-                    <ThumbUpIcon style={{
-                      color: 'blue', marginTop: '20px'
-                    }}/>
                   </p>
                 </div>
               </div>
@@ -289,9 +272,6 @@ const Beers = ({data}) => {
                 <div className="flex items-center gap-8">
                   <p className="beers-price">
                     {'2'} <span className="text-sm text-red-500">Kn</span>
-                    <ThumbUpIcon style={{
-                      color: 'blue', marginTop: '20px'
-                    }}/>
                   </p>
                 </div>
               </div>

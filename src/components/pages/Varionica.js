@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {motion} from "framer-motion";
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import {useStateValue} from "../context/StateProvider";
 
 export default function Varionica() {
+
     const [{beers},] = useStateValue();
     const [filteredData, setFilteredData] = useState([]);
 
@@ -19,7 +19,7 @@ export default function Varionica() {
         else {
             setFilteredData([])
         }
-    }, [beers])
+    })
     return (
         <>
             <div className='varionica'>
@@ -90,7 +90,6 @@ export default function Varionica() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <ThumbUpIcon style={{color: 'blue'}}/>
                                     </div>
 
                                 );
@@ -125,9 +124,6 @@ export default function Varionica() {
                                             <div className="flex items-center gap-8">
                                                 <p className="beers-price">
                                                     {'2'} <span className="text-sm text-red-500">Kn</span>
-                                                    <ThumbUpIcon style={{
-                                                        color: 'blue', marginTop: '20px'
-                                                    }}/>
                                                 </p>
                                             </div>
                                         </div>
@@ -160,9 +156,6 @@ export default function Varionica() {
                                             <div className="flex items-center gap-8">
                                                 <p className="beers-price">
                                                     {'2'} <span className="text-sm text-red-500">Kn</span>
-                                                    <ThumbUpIcon style={{
-                                                        color: 'blue', marginTop: '20px'
-                                                    }}/>
                                                 </p>
                                             </div>
                                         </div>
@@ -196,9 +189,6 @@ export default function Varionica() {
                                             <div className="flex items-center gap-8">
                                                 <p className="beers-price">
                                                     {'2'} <span className="text-sm text-red-500">Kn</span>
-                                                    <ThumbUpIcon style={{
-                                                        color: 'blue', marginTop: '20px'
-                                                    }}/>
                                                 </p>
                                             </div>
                                         </div>
