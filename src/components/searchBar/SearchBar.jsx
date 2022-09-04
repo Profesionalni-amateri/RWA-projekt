@@ -1,12 +1,11 @@
-import React, { useState} from 'react';
+import React, {useState} from 'react';
 import SearchIcon from "@material-ui/icons/Search";
 import CloseIcon from "@material-ui/icons/Close";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import './SearchBar.css';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
+import {firestore, polje, azurirajPolje} from "../../firebase";
 
 const SearchBar = ({placeholder ,data}) => {
   const [filteredData, setFilteredData] = useState([]);
@@ -27,9 +26,24 @@ const SearchBar = ({placeholder ,data}) => {
     }
   };
 
-  const likeing = ()=>{
-        setLikes(likes + 1)
-      
+
+  const likeing = (kljuc, vrijednost)=>{
+
+    const docRef = polje(firestore, 'beers', kljuc);
+    const data2 = {
+      likes: vrijednost + 1
+
+    };
+
+     azurirajPolje(docRef,
+        data2)
+        .then(docRef => {
+          console.log("lajkao si");
+        })
+        .catch(error => {
+          console.log(error);
+        })
+
 
   }
 
@@ -136,13 +150,13 @@ const SearchBar = ({placeholder ,data}) => {
             <ThumbUpIcon style={{ color: 'blue',
                                     marginTop:'10px',
                                     fontSize:'32px'               
-                                    }} onClick={likeing}/>
+                                    }} onClick={()=>likeing(item?.id, item?.likes)} />
                                     
             <ThumbDownIcon style={{ color: 'red',
                                       marginLeft:'10px',
                                     marginTop:'10px',
                                     fontSize:'32px'
-                                    }} onClick={item?.dislike + 1}/>
+                                    }} />
             <span style={{marginLeft:'5px',
                         fontSize:'20px'
                         }}>{item?.dislikes}</span>
