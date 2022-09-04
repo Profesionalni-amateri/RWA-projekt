@@ -241,28 +241,31 @@ html {
 }
 
 .recenzija .all-items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 90px;
-    overflow: auto;
+    flex-wrap: nowrap;
+    overflow-wrap: normal;
+    flex-direction: column;
+    overflow: scroll;
+    margin-top: 60px;
+    align-items: center;
     width: 100%;
     height: 83%;
 
 }
 
-.recenzija .item-beer2 {
-    flex: 1 0 21%; /* explanation below */
-    margin-left: 10px;
+.recenzija .item-beer3 {
+    display: flex;
+    margin-top: 30px;
     border-radius: 5%;
-    max-width: 360px;
+    width: 560px;
     height: 205px;
     font-size: medium;
     background-color: rgba(157, 158, 153, 0.599);
 }
+.recenzija .review-box {
 
-.recenzija .nesto {
     display: flex;
-    margin-left: 100px;
+    margin-left: 30px;
+    margin-top: 50px;
 }
 
 .btn:hover {

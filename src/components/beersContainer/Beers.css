@@ -13,7 +13,9 @@
     font-size: medium;
     background-color: rgba(157, 158, 153, 0.599);
 }
-
+.item-beer:hover{
+    scale: 1.1;
+}
 .item-beer2{
     margin-left: 10px;
     margin-right: 8px;

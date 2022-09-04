@@ -67,9 +67,8 @@ export default function Zmajska() {
                                     key={key}
                                     className="item-beer2"
                                 >
-                                    <div className="w-full flex items-center justify-between">
+                                    <div>
                                         <motion.div
-                                            className="w-40 h-40 -mt-8 drop-shadow-2xl"
                                             whileHover={{scale: 1.01}}
                                         >
                                             <img
@@ -87,11 +86,11 @@ export default function Zmajska() {
                                         </p>
                                         <p className="beers-pivovara">
                                                     <span
-                                                        className="text-sm text-red-500">Pivovara: </span>{item?.pivovara}
+                                                    >Pivovara: </span>{item?.pivovara}
                                         </p>
-                                        <div className="flex items-center gap-8">
+                                        <div>
                                             <p className="beers-price">
-                                                {item?.cijena} <span className="text-sm text-red-500">Kn</span>
+                                                {item?.cijena} <span>Kn</span>
                                             </p>
                                         </div>
                                     </div>
@@ -106,9 +105,8 @@ export default function Zmajska() {
                                 key={item?.id}
                                 className="item-beer2"
                             >
-                                <div className="w-full flex items-center justify-between">
+                                <div>
                                     <motion.div
-                                        className="w-40 h-40 -mt-8 drop-shadow-2xl"
                                         whileHover={{scale: 1.1}}
                                     >
                                         <img
@@ -125,11 +123,11 @@ export default function Zmajska() {
                                         {item?.naziv}
                                     </p>
                                     <p className="beers-pivovara">
-                                        <span className="text-sm text-red-500">Pivovara: </span>{item?.pivovara}
+                                        <span>Pivovara: </span>{item?.pivovara}
                                     </p>
-                                    <div className="flex items-center gap-8">
+                                    <div>
                                         <p className="beers-price">
-                                            {item?.cijena} <span className="text-sm text-red-500">Kn</span>
+                                            {item?.cijena} <span>Kn</span>
                                         </p>
                                     </div>
                                 </div>
@@ -138,9 +136,8 @@ export default function Zmajska() {
                                 key={10}
                                 className="item-beer2"
                             >
-                                <div className="w-full flex items-center justify-between">
+                                <div>
                                     <motion.div
-                                        className="w-40 h-40 -mt-8 drop-shadow-2xl"
                                         whileHover={{scale: 1.1}}
                                     >
                                         <img
@@ -157,11 +154,11 @@ export default function Zmajska() {
                                         {'test 1'}
                                     </p>
                                     <p className="beers-pivovara">
-                                        <span className="text-sm text-red-500">Pivovara: </span>{'pivovara'}
+                                        <span>Pivovara: </span>{'pivovara'}
                                     </p>
-                                    <div className="flex items-center gap-8">
+                                    <div>
                                         <p className="beers-price">
-                                            {'2'} <span className="text-sm text-red-500">Kn</span>
+                                            {'2'} <span>Kn</span>
                                         </p>
                                     </div>
                                 </div>
@@ -170,9 +167,8 @@ export default function Zmajska() {
                                 key={2}
                                 className="item-beer2"
                             >
-                                <div className="w-full flex items-center justify-between">
+                                <div>
                                     <motion.div
-                                        className="w-40 h-40 -mt-8 drop-shadow-2xl"
                                         whileHover={{scale: 1.1}}
                                     >
                                         <img
@@ -189,11 +185,11 @@ export default function Zmajska() {
                                         {'test 2'}
                                     </p>
                                     <p className="beers-pivovara">
-                                        <span className="text-sm text-red-500">Pivovara: </span>{'pivovara'}
+                                        <span>Pivovara: </span>{'pivovara'}
                                     </p>
-                                    <div className="flex items-center gap-8">
+                                    <div>
                                         <p className="beers-price">
-                                            {'2'} <span className="text-sm text-red-500">Kn</span>
+                                            {'2'} <span>Kn</span>
                                         </p>
                                     </div>
                                 </div>
@@ -203,9 +199,8 @@ export default function Zmajska() {
                                 key={3}
                                 className="item-beer2"
                             >
-                                <div className="w-full flex items-center justify-between">
+                                <div>
                                     <motion.div
-                                        className="w-40 h-40 -mt-8 drop-shadow-2xl"
                                         whileHover={{scale: 1.1}}
                                     >
                                         <img
@@ -222,11 +217,11 @@ export default function Zmajska() {
                                         {'test 3'}
                                     </p>
                                     <p className="beers-pivovara">
-                                        <span className="text-sm text-red-500">Pivovara: </span>{'pivovara'}
+                                        <span>Pivovara: </span>{'pivovara'}
                                     </p>
-                                    <div className="flex items-center gap-8">
+                                    <div>
                                         <p className="beers-price">
-                                            {'2'} <span className="text-sm text-red-500">Kn</span>
+                                            {'2'} <span>Kn</span>
                                         </p>
                                     </div>
                                 </div>
@@ -235,9 +230,8 @@ export default function Zmajska() {
                                 key={4}
                                 className="item-beer2"
                             >
-                                <div className="w-full flex items-center justify-between">
+                                <div>
                                     <motion.div
-                                        className="w-40 h-40 -mt-8 drop-shadow-2xl"
                                         whileHover={{scale: 1.1}}
                                     >
                                         <img
@@ -254,11 +248,11 @@ export default function Zmajska() {
                                         {'test 4'}
                                     </p>
                                     <p className="beers-pivovara">
-                                        <span className="text-sm text-red-500">Pivovara: </span>{'pivovara'}
+                                        <span>Pivovara: </span>{'pivovara'}
                                     </p>
-                                    <div className="flex items-center gap-8">
+                                    <div>
                                         <p className="beers-price">
-                                            {'2'} <span className="text-sm text-red-500">Kn</span>
+                                            {'2'} <span>Kn</span>
                                         </p>
                                     </div>
                                 </div>
