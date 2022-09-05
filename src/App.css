@@ -110,10 +110,48 @@
     font-size: 100px;
     align-items: center;
     justify-content: center;
+    opacity: 0.8;
+}
+
+.introduction{
+    margin-top: 20px;
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.homepageParagraph{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.aboutCraft{
+   /* background-color: rgba(123, 112, 112, 0.374);*/
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.whatIsCraft{
+    border-radius: 4px;
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: "Lucida Handwriting";
+
+}
+
+.whatIsCraft2{
+    margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .home .beers-div {
-    margin-top: 400px;
+    /*margin-top: 400px;*/
     margin-left: 10px;
     margin-right: 10px;
     width: 100%;
