@@ -128,7 +128,6 @@
 }
 
 .aboutCraft{
-   /* background-color: rgba(123, 112, 112, 0.374);*/
     align-items: center;
     text-align: center;
     margin-left: auto;
@@ -151,7 +150,6 @@
 }
 
 .home .beers-div {
-    /*margin-top: 400px;*/
     margin-left: 10px;
     margin-right: 10px;
     width: 100%;
@@ -189,7 +187,6 @@ html {
     display: flex;
     height: 200vh;
     justify-content: center;
-    /*background-image: url('./images/pivovare.jpg');*/
     background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 0.6) 11.2%, rgba(110, 123, 251, 0.6) 91.1%);
     background-position: center;
     background-size: cover;
@@ -238,8 +235,6 @@ html {
     margin-left: 20px;
     margin-right: 15px;
     margin-bottom: 100px;
-
-
 }
 
 .ff {
@@ -495,23 +490,47 @@ html {
 }
 
 @media screen and (max-width: 800px) {
-
     .btn-sign-in,
     .btn-sign-up,
     .btn-logout {
         display: flex;
-
     }
 
     .pivovare {
         justify-content: left;
         height: 130vh;
     }
+
+    .facts {
+        background: rgba(0, 0, 0, 0.3);
+        font-size: 1em;
+        margin-left: 20px;
+        margin-right: 15px;
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+    
+    .zanimljivosti{
+        width: 100vw;  
+        height: 50vh;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (max-width: 1300px) {
-
     .pivovare {
         justify-content: left;
+    }
+
+    .zanimljivosti{
+        width: 100vw;  
+        height: 80vh;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .facts{
+        font-size: 1em;
+        margin-top: 100px;
     }
 }
