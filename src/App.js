@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Navbar, Footer, SignUp, SignIn} from './components';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {Home, Pivovare, Piva, Zanimljivosti, Bosnjak, Varionica, Onama, Review} from './components';
+import {Home, Pivovare, Piva, Zanimljivosti, Bosnjak, Varionica,Zmajska, Onama, Review} from './components';
 import { AuthContextProvider } from './components/context/AuthContext';
 import ProtectedRoute from './components/authentication/ProtectedRoute';
+import { getAllItems } from "./utils/firebaseFunctions";
+import { useStateValue } from "./components/context/StateProvider";
+import { actionType } from "./components/context/reducer";
 
 
 const App = () =>  {
+
+  const [, dispatch] = useStateValue();
+  const fetchData = async () => {
+    await getAllItems().then((data) => {
+      dispatch({
+      type: actionType.SET_BEERS,
+      beers: data,
+    });
+    });
+  };
+
+  useEffect(() => {
+    fetchData();
+  });
+
+
+
   return (
     <Router>
       <Navbar />
@@ -27,6 +47,7 @@ const App = () =>  {
         <Route path='/sign_in' element={<SignIn/>} />
         <Route path='/bosnjak' element={<Bosnjak/>} />
         <Route path='/varionica' element={<Varionica/>} />
+        <Route path='/zmajska' element={<Zmajska />} />
         <Route path='/onama' element={<Onama/>} />
       </Routes>
       </AuthContextProvider>

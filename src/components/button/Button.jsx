@@ -15,7 +15,8 @@ export function Button() {
   async function handleLogout() {
     try {
       await logout();
-      navigate('/sign_in');
+      navigate('/');
+      window.location.reload(false);
       console.log('You are logged out');
     } catch (e) {
       console.log(e.message);
