@@ -110,26 +110,28 @@
     font-size: 100px;
     align-items: center;
     justify-content: center;
-    opacity: 0.8;
 }
 
-.introduction{
+.home .introduction{
     margin-top: 20px;
     font-size: 55px;
     text-align: center;
     font-weight: bold;
 }
 
-.homepageParagraph{
+.home .homepageParagraph{
     text-align: center;
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 50px;
 }
 
-.aboutCraft{
+.home .aboutCraft{
+    background-color: rgba(110, 102, 76, 0.57);
     align-items: center;
     text-align: center;
+    width: 1300px;
+   border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
@@ -140,7 +142,6 @@
     border-radius: 4px;
     font-size: 60px;
     margin-bottom: 20px;
-    font-family: "Lucida Handwriting";
 
 }
 
@@ -489,6 +490,7 @@ html {
     width: 1.5%;
 }
 
+
 @media screen and (max-width: 800px) {
     .btn-sign-in,
     .btn-sign-up,
@@ -509,12 +511,57 @@ html {
         margin-top: 200px;
         margin-bottom: 50px;
     }
-    
+
     .zanimljivosti{
-        width: 100vw;  
+        width: 100vw;
         height: 50vh;
         overflow: scroll;
         overflow-x: hidden;
+    }
+    .home{
+        height: 170vh;
+    }
+    .bosnjak,
+    .varionica,
+    .zmajska{
+        height: 230vh;
+        align-items: center;
+
+    }
+    .textBrewery{
+        font-size: small;
+
+    }
+
+    .textBrewery2{
+        font-size: small;
+        margin-left: 6px;
+        border-radius: unset;
+    }
+   .imageAndText{
+        margin-left: 100px;
+    }
+
+    .zmajska .test{
+       visibility: hidden;
+    }
+    .bosnjak .test{
+        visibility: hidden;
+    }
+    .varionica .test{
+        visibility: hidden;
+    }
+    .img{
+        visibility: hidden;
+    }
+    .zmajska .all-items{
+        visibility: hidden;
+    }
+    .bosnjak .all-items{
+        visibility: hidden;
+    }
+    .varionica .all-items{
+        visibility: hidden;
     }
 }
 
@@ -524,7 +571,7 @@ html {
     }
 
     .zanimljivosti{
-        width: 100vw;  
+        width: 100vw;
         height: 80vh;
         overflow: scroll;
         overflow-x: hidden;
@@ -532,5 +579,21 @@ html {
     .facts{
         font-size: 1em;
         margin-top: 100px;
+    }
+
+    .bosnjak{
+        height: 270vh;
+    }
+    .varionica{
+        height: 270vh;
+    }
+    .zmajska{
+        height: 320vh;
+    }
+}
+@media screen and (max-width: 1550px) {
+
+    .zmajska{
+        height: 170vh;
     }
 }

@@ -24,11 +24,11 @@ const Review = () => {
 
     const liking = (kljuc, vrijednost) => {
 
-        setClick(true)
-        setClick2(false)
         const docRef = polje(firestore, 'beers', kljuc);
         const data2 = {
-            likes: vrijednost + 1
+            likes: vrijednost + 1,
+            isLiked: true,
+            isDisliked: false
 
         };
 
@@ -45,11 +45,12 @@ const Review = () => {
     }
     const disliking = (kljuc, vrijednost) => {
 
-        setClick2(true)
-        setClick(false)
+
         const docRef = polje(firestore, 'beers', kljuc);
         const data2 = {
-            dislikes: vrijednost + 1
+            dislikes: vrijednost + 1,
+            isLiked: false,
+            isDisliked: true
 
         };
 
@@ -111,13 +112,13 @@ const Review = () => {
                                 <ThumbUpIcon
                                     sx={{
                                         fontSize: 60,
-                                        color: isClicked ? "blue" : "white"
+                                        color: item?.isLiked ? "blue" : "white"
                                     }} onClick={() => {
                                     liking(item?.id, item?.likes)
                                 }}/>
                                 <ThumbDownIcon sx={{
                                     fontSize: 60,
-                                    color: isClicked2 ? "red" : "white",
+                                    color: item?.isDisliked ? "red" : "white",
                                     marginLeft: 5
                                 }} onClick={() => {
                                     disliking(item?.id, item?.dislikes)

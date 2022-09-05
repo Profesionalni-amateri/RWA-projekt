@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <section className='home'>
           <div className='aboutCraft'>
-            <p className='introduction'>Dobrodošli na stranicu o hrvatskom tekućem zlatu</p>
+            <p className='introduction'>Dobrodošli na stranicu o hrvatskom tekućem <span style={{color:"gold"}}>zlatu</span></p>
             <p className='homepageParagraph'>Prošetat ćemo se kroz hrvatske pivovare te upoznati različita craft piva...</p>
             <p className='whatIsCraft'>Što je to craft pivo?</p>
             <p className='whatIsCraft2'>Pivo proizvedeno na kreativan način, bez korištenja jeftinih sirovina kako bi se uštedjelo u proizvodnji, 

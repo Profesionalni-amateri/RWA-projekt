@@ -83,27 +83,27 @@ const SearchBar = ({placeholder, data}) => {
                                                 {item?.cijena} <span>Kn</span>
                                             </p>
                                         </div>
-                                    </div>
-                                    <span style={{
-                                        marginRight: '5px',
-                                        fontSize: '20px'
-                                    }}>{item?.likes}</span>
-                                    <ThumbUpIcon style={{
-                                        color: 'blue',
-                                        marginTop: '10px',
-                                        fontSize: '32px'
-                                    }}/>
+                                        <span style={{
+                                            marginRight: '5px',
+                                            fontSize: '20px'
+                                        }}>{item?.likes}</span>
+                                        <ThumbUpIcon style={{
+                                            color: 'blue',
+                                            marginTop: '10px',
+                                            fontSize: '32px'
+                                        }}/>
 
-                                    <ThumbDownIcon style={{
-                                        color: 'red',
-                                        marginLeft: '60px',
-                                        marginTop: '10px',
-                                        fontSize: '32px'
-                                    }}/>
-                                    <span style={{
-                                        marginLeft: '5px',
-                                        fontSize: '20px'
-                                    }}>{item?.dislikes}</span>
+                                        <ThumbDownIcon style={{
+                                            color: 'red',
+                                            marginLeft: '60px',
+                                            marginTop: '10px',
+                                            fontSize: '32px'
+                                        }}/>
+                                        <span style={{
+                                            marginLeft: '5px',
+                                            fontSize: '20px'
+                                        }}>{item?.dislikes}</span>
+                                    </div>
                                 </div>
 
                             );
@@ -141,28 +141,28 @@ const SearchBar = ({placeholder, data}) => {
                                     <div>
                                         <p className="beers-price">
                                             {item?.cijena} <span>Kn</span>
-                                            <span style={{
-                                                marginRight: '5px',
-                                                fontSize: '20px'
-                                            }}>{item?.likes}</span>
-                                            <ThumbUpIcon style={{
-                                                color: 'blue',
-                                                marginTop: '10px',
-                                                fontSize: '32px'
-                                            }}/>
-
-                                            <ThumbDownIcon style={{
-                                                color: 'red',
-                                                marginLeft: '10px',
-                                                marginTop: '10px',
-                                                fontSize: '32px'
-                                            }}/>
-                                            <span style={{
-                                                marginLeft: '5px',
-                                                fontSize: '20px'
-                                            }}>{item?.dislikes}</span>
                                         </p>
                                     </div>
+                                    <span style={{
+                                        marginRight: '5px',
+                                        fontSize: '20px'
+                                    }}>{item?.likes}</span>
+                                    <ThumbUpIcon style={{
+                                        color: 'blue',
+                                        marginTop: '10px',
+                                        fontSize: '32px'
+                                    }}/>
+
+                                    <ThumbDownIcon style={{
+                                        color: 'red',
+                                        marginLeft: '40px',
+                                        marginTop: '10px',
+                                        fontSize: '32px'
+                                    }}/>
+                                    <span style={{
+                                        marginLeft: '5px',
+                                        fontSize: '20px'
+                                    }}>{item?.dislikes}</span>
                                 </div>
                             </div>
                         ))
